@@ -307,7 +307,7 @@ style.textContent = `
 document.head.appendChild(style);
 
 // ============================================
-// 鼠标跟随效果（可选）
+// 鼠标跟随效果 (v2.1 增强)
 // ============================================
 let mouseX = 0;
 let mouseY = 0;
@@ -323,6 +323,16 @@ document.addEventListener('mousemove', (e) => {
         const x = (window.innerWidth / 2 - mouseX) * speed;
         const y = (window.innerHeight / 2 - mouseY) * speed;
         orb.style.transform = `translate(${x}px, ${y}px)`;
+    });
+
+    // 经验卡片光晕跟随效果
+    const experienceCards = document.querySelectorAll('.experience-card');
+    experienceCards.forEach(card => {
+        const rect = card.getBoundingClientRect();
+        const cardMouseX = ((e.clientX - rect.left) / rect.width) * 100;
+        const cardMouseY = ((e.clientY - rect.top) / rect.height) * 100;
+        card.style.setProperty('--mouse-x', `${cardMouseX}%`);
+        card.style.setProperty('--mouse-y', `${cardMouseY}%`);
     });
 });
 
