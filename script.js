@@ -333,9 +333,9 @@ function init() {
     // 启动打字动画
     setTimeout(typeEffect, 1000);
 
-    // 添加淡入动画到元素
+    // 添加淡入动画到元素 (v2.0 更新)
     const fadeElements = document.querySelectorAll(
-        '.about-content, .skill-card, .project-card, .contact-item'
+        '.about-content, .skill-card, .project-card, .contact-item, .info-card, .experience-card, .knowledge-card, .qr-card'
     );
     fadeElements.forEach(el => {
         el.classList.add('fade-in');
@@ -418,10 +418,12 @@ window.addEventListener('scroll', () => {
 });
 
 // ============================================
-// 控制台彩蛋
+// 控制台彩蛋 (v2.0 更新)
 // ============================================
 console.log('%c欢迎来到卢嘉豪的AI创意空间！', 'font-size: 24px; font-weight: bold; background: linear-gradient(135deg, #8b5cf6, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent;');
 console.log('%cAIGC内容创作者 | 提示词工程师 | AI视频创作者', 'font-size: 14px; color: #a5b4fc;');
 console.log('%c✨ 用AI点燃你的创意 ✨', 'font-size: 14px; color: #06b6d4;');
+console.log('%c📦 网站版本: v2.0 - 新增项目路演、Vibe Coding 经验、知识库专区', 'font-size: 12px; color: #22c55e;');
 console.log('%c小红书: https://xhslink.com/m/7aRJQuIQxD6', 'font-size: 12px; color: #ec4899;');
 console.log('%c抖音: https://v.douyin.com/3m_41CNYT80/', 'font-size: 12px; color: #ec4899;');
+console.log('%c飞书知识库: https://pcn3kvelf0s9.feishu.cn/wiki/CnhWwGw0ciaaA7k2VEVckqz1nOc', 'font-size: 12px; color: #06b6d4;');
