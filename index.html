@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>卢嘉豪 | AIGC内容创作者 & AI视频制作人</title>
+    <meta name="description" content="卢嘉豪 - AIGC内容创作者、提示词工程师、AI Agent开发者。专注AI视频创作，在小红书和抖音分享AI作品与技巧。">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 背景动画 -->
+    <div class="background-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="gradient-orb orb-4"></div>
+        <div class="grid-pattern"></div>
+    </div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-icon">&lt;</span>
+                <span class="logo-text">卢嘉豪</span>
+                <span class="logo-icon">/&gt;</span>
+            </a>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active" data-section="home">首页</a>
+                <a href="#about" class="nav-link" data-section="about">关于</a>
+                <a href="#skills" class="nav-link" data-section="skills">技能</a>
+                <a href="#projects" class="nav-link" data-section="projects">作品</a>
+                <a href="#contact" class="nav-link" data-section="contact">联系</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 主页区域 -->
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span class="badge-text">🚀 AIGC内容创作者</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="site-name">卢嘉豪</span>
+                    <span class="site-tagline">用AI点燃你的创意</span>
+                </h1>
+                <p class="hero-subtitle">
+                    <span class="typing-text" id="typingText"></span>
+                    <span class="typing-cursor"></span>
+                </p>
+                <p class="hero-description">
+                    在AI时代，创意比以往任何时候都更重要。
+                    <br>作为一名AIGC内容创作者，我用AI工具将想象变为现实。
+                    <br>加入我，一起探索AI创作的无限可能，让你的创意在AI的助力下绽放光芒。
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>查看作品</span>
+                        <i class="fas fa-play"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>合作交流</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://xhslink.com/m/7aRJQuIQxD6" target="_blank" class="social-link" aria-label="小红书">
+                        <i class="fas fa-book-open"></i>
+                    </a>
+                    <a href="https://v.douyin.com/3m_41CNYT80/" target="_blank" class="social-link" aria-label="抖音">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="mailto:2249428146@qq.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <span class="window-dot red"></span>
+                        <span class="window-dot yellow"></span>
+                        <span class="window-dot green"></span>
+                        <span class="window-title">lu-jiahao-creator.js</span>
+                    </div>
+                    <div class="window-content">
+                        <pre><code><span class="code-keyword">const</span> <span class="code-variable">creator</span> = {
+  <span class="code-property">name</span>: <span class="code-string">"卢嘉豪"</span>,
+  <span class="code-property">title</span>: <span class="code-string">"AIGC创作者"</span>,
+  <span class="code-property">roles</span>: [
+    <span class="code-string">"提示词工程师"</span>,
+    <span class="code-string">"AI Agent开发者"</span>,
+    <span class="code-string">"AI视频创作者"</span>
+  ],
+  <span class="code-property">mission</span>: <span class="code-string">"点燃你的AI创意"</span>,
+  <span class="code-property">create</span>() {
+    <span class="code-keyword">return</span> <span class="code-string">"用AI让创意无限"</span>;
+  }
+};</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01.</span>
+                <h2 class="section-title">关于我</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        你好！我是卢嘉豪，一名热爱探索AI边界的AIGC内容创作者。
+                    </p>
+                    <p class="about-detail">
+                        在这个AI飞速发展的时代，我相信<strong>创意是核心竞争力</strong>。
+                        作为一名提示词工程师和AI Agent开发者，我深入研究如何用精准的Prompt
+                        激发AI的最大潜能，将脑海中的创意转化为令人惊叹的视觉作品。
+                    </p>
+                    <p class="about-detail">
+                        我专注于<strong>AI视频创作</strong>领域，在小红书和抖音等平台分享我的AI作品和创作心得。
+                        从创意构思到Prompt编写，从AI生图到视频生成，我乐于分享每一个环节的经验与技巧，
+                        希望能帮助更多人拥抱AI工具，释放自己的创作潜能。
+                    </p>
+                    <p class="about-detail">
+                        <strong>AI是工具，创意是灵魂。</strong>
+                        让我们一起用AI点燃创意，创作出更多令人心动的作品！
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="100">0</span>
+                            <span class="stat-label">%热爱</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="999">0</span>
+                            <span class="stat-label">+创意</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="1">0</span>
+                            <span class="stat-label">个使命</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="image-placeholder">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <div class="frame-decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能展示 -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02.</span>
+                <h2 class="section-title">专业技能</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3 class="category-title">AIGC 核心能力</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-wand-magic-sparkles"></i>
+                            </div>
+                            <h4 class="skill-name">提示词工程</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4 class="skill-name">AI Agent 开发</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-clapperboard"></i>
+                            </div>
+                            <h4 class="skill-name">AI 视频创作</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-image"></i>
+                            </div>
+                            <h4 class="skill-name">AI 生图</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3 class="category-title">创作与运营</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-film"></i>
+                            </div>
+                            <h4 class="skill-name">视频剪辑</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h4 class="skill-name">视觉设计</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4 class="skill-name">内容运营</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="82"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h4 class="skill-name">创意策划</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品展示 -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03.</span>
+                <h2 class="section-title">作品展示</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-placeholder">
+                <div class="placeholder-content">
+                    <div class="placeholder-icon">
+                        <i class="fas fa-clapperboard"></i>
+                    </div>
+                    <h3 class="placeholder-title">AI视频作品</h3>
+                    <p class="placeholder-description">
+                        我在小红书和抖音持续发布AI视频作品，分享创作过程和实用技巧。
+                        <br>关注我，一起学习AI，用AI点燃你的创意！
+                    </p>
+                    <div class="placeholder-links">
+                        <a href="https://xhslink.com/m/7aRJQuIQxD6" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-book-open"></i>
+                            <span>小红书</span>
+                        </a>
+                        <a href="https://v.douyin.com/3m_41CNYT80/" target="_blank" class="btn btn-secondary">
+                            <i class="fab fa-tiktok"></i>
+                            <span>抖音</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我 -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04.</span>
+                <h2 class="section-title">联系合作</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-title">用AI点燃创意，共创精彩</h3>
+                    <p class="contact-description">
+                        AI时代，创意为王。如果你也对AI创作充满热情，
+                        欢迎与我交流合作。让我们一起用AI工具，将更多创意变为现实！
+                    </p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">邮箱</span>
+                                <span class="contact-value">2249428146@qq.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">小红书</span>
+                                <a href="https://xhslink.com/m/7aRJQuIQxD6" target="_blank" class="contact-value">点击关注</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-tiktok"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">抖音</span>
+                                <a href="https://v.douyin.com/3m_41CNYT80/" target="_blank" class="contact-value">点击关注</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">状态</span>
+                                <span class="contact-value available">开放合作</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" id="name" name="name" placeholder="请输入您的姓名" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">邮箱</label>
+                        <input type="email" id="email" name="email" placeholder="请输入您的邮箱" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">主题</label>
+                        <input type="text" id="subject" name="subject" placeholder="合作咨询 / 技术交流">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">消息</label>
+                        <textarea id="message" name="message" rows="5" placeholder="请输入您想说的话..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-submit">
+                        <span>发送消息</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">
+                &copy; 2024 卢嘉豪. 用 <i class="fas fa-heart"></i> 和 AI 点燃创意
+            </p>
+            <div class="footer-links">
+                <a href="https://xhslink.com/m/7aRJQuIQxD6" target="_blank" class="footer-link" aria-label="小红书">
+                    <i class="fas fa-book-open"></i>
+                </a>
+                <a href="https://v.douyin.com/3m_41CNYT80/" target="_blank" class="footer-link" aria-label="抖音">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="mailto:2249428146@qq.com" class="footer-link" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
